@@ -1,0 +1,21 @@
+{
+  "name": "secure-web-app",
+  "version": "1.0.0",
+  "description": "Secure PHP/JavaScript web application",
+  "author": "Carlos Gutierrez <cgutierrez44833@ucumberlands.edu>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CarGDev/MSCS535_Assignment14"
+  },
+  "scripts": {
+    "lint": "eslint public/js/ && ./vendor/bin/phpcs --standard=PSR12 api/ config/",
+    "lint:fix": "eslint public/js/ --fix",
+    "format": "prettier --write \"public/**/*.{html,js,css}\"",
+    "format:check": "prettier --check \"public/**/*.{html,js,css}\"",
+    "format:all": "prettier --write \"public/**/*.{html,js,css}\" && ./vendor/bin/phpcbf api/ config/"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5"
+  }
+}

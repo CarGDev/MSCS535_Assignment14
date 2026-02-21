@@ -1,0 +1,13 @@
+{
+    "name": "user/secure-web-app",
+    "description": "Secure PHP/JavaScript web application",
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.9"
+    },
+    "config": {
+        "php_codesniffer": {
+            "standard": "PSR12",
+            "encoding": "utf-8"
+        }
+    }
+}
